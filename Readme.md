@@ -221,8 +221,6 @@ Database credentials are loaded from environment variables and are not stored in
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/06d97241-9adb-4c6c-916e-e7949152d3b6" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/1502babe-199b-4917-92f9-d9a8ea67fcba" />
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/709b4037-2f67-4e0b-9f14-a1f55206020f" />
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/73cecd9c-34b7-494b-9ea9-1b66806aedf5" />
-
 
 ## Notes
 
