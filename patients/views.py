@@ -11,7 +11,7 @@ from .serializers import PatientSerializer
 class PatientView(APIView):
     permission_classes=[IsAuthenticated]
     def get(self, request):
-        patients = Patient.objects.all()
+        patients = Patient.objects.filter(created_by=request.user)
         # serialize the data python object to json
         serializer = PatientSerializer(patients, many=True)
         return Response(serializer.data, status=200)
@@ -19,7 +19,7 @@ class PatientView(APIView):
     def post(self, request):
         serializer = PatientSerializer(data=request.data)
         if serializer.is_valid():
-            serializer.save()
+            serializer.save(created_by=request.user)
             return Response(serializer.data, status=201)
         return Response(serializer.errors, status=400)
 
